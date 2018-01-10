@@ -1,17 +1,21 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-secret-box',
   templateUrl: './secret-box.component.html',
   styleUrls: ['./secret-box.component.css']
 })
-export class SecretBoxComponent implements OnInit {
+export class SecretBoxComponent {
   @Input() isHidingSecret = true;
   @Input() secret: string;
 
-  constructor() { }
+  @Output() hide = new EventEmitter();
 
-  ngOnInit() {
+  toggleSecretVisibility() {
+    this.isHidingSecret = !this.isHidingSecret;
+
+    if (this.isHidingSecret === true) {
+      this.hide.emit();
+    }
   }
-
 }

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  shouldSecretBeHidden = false;
+
+  confirmHide() {
+    window.alert('Das Geheimnis ist in Sicherheit.');
+  }
 }

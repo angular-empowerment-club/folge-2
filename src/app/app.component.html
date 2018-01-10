@@ -1,4 +1,5 @@
 <app-secret-box
- [isHidingSecret]="false"
- [secret]="'Geheim!!!'">
+ [isHidingSecret]="shouldSecretBeHidden"
+ [secret]="'Geheim!!!'"
+ (hide)="confirmHide()">
 </app-secret-box>
