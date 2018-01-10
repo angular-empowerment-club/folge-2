@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SecretBoxComponent } from './secret-box/secret-box.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SecretBoxComponent
   ],
   imports: [
     BrowserModule
