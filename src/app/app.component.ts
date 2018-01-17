@@ -6,9 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  shouldSecretBeHidden = false;
-
-  confirmHide() {
-    window.alert('Das Geheimnis ist in Sicherheit.');
-  }
+  tsla = {
+    symbol: 'tsla',
+    compony: 'Tesla Inc',
+    last: 285,
+    details: {
+      updatedOn: new Date(2018, 0, 17, 21, 29),
+      earnings: new Date(2018, 1, 28)
+    }
+  };
 }
