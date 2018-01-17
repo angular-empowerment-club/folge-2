@@ -11,8 +11,8 @@ export class AppComponent {
     compony: 'Tesla Inc',
     last: 285,
     details: {
-      updatedOn: new Date(2018, 0, 17, 21, 29),
-      earnings: new Date(2018, 1, 28)
+      lastUpdateOn: new Date(2018, 0, 17, 21, 29),
+      nextEarnings: new Date(2018, 1, 28)
     }
   };
 }

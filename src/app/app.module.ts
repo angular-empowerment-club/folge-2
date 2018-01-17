@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SecretBoxComponent } from './secret-box/secret-box.component';
 import { StockCardComponent } from './stock-card/stock-card.component';
+import { StockDetailsComponent } from './stock-details/stock-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SecretBoxComponent,
-    StockCardComponent
+    StockCardComponent,
+    StockDetailsComponent
   ],
   imports: [
     BrowserModule
