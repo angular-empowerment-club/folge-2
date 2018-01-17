@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   tsla = {
     symbol: 'tsla',
-    compony: 'Tesla Inc',
+    company: 'Tesla Inc',
     last: 285,
     details: {
       lastUpdateOn: new Date(2018, 0, 17, 21, 29),
